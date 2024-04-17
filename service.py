@@ -3,7 +3,7 @@ import json
 
 def post(url:str, data:str, headers:str):
     response = requests.post(url, 
-                             data=json.dumps(data), 
+                             params=json.dumps(data), 
                              headers=headers, 
                              cookies={"X-Token":"hahahaha"})
     return response.json() 

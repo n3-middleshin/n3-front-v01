@@ -48,6 +48,7 @@ def set_user_menu():
 
     # st.cache_data 
     with st.sidebar: 
+        st.page_link("pages/chat_prompt_system_role.py", label="Chat System Role")
         st.page_link("pages/default.py", label="Your profile")
         st.page_link("pages/admin.py", label="Manage users")
         st.page_link("pages/super-admin.py", label="Manage admin access" )
